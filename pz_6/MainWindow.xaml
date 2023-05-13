@@ -1,0 +1,19 @@
+﻿<Window x:Class="pz_6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pz_6"
+        mc:Ignorable="d"
+                Title="Long Calculations App" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Button Content="Начать длительный расчет" Click="StartLongCalculation_Click"/>
+        <ProgressBar Grid.Row="1" Name="Progress" Margin="0,268,0,0" />
+        <InkCanvas Grid.Row="1" Name="InkCanvas" Margin="0,0,0,31"/>
+    </Grid>
+</Window>
+
